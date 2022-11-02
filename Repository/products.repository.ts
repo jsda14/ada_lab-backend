@@ -7,8 +7,4 @@ export class ProductsRepository {
         return await Products.findAll()
     }
 
-    public static async sendOrder(req: Request, res: Response){
-        const { data } = req.body
-        console.log(data);
-    }
 }

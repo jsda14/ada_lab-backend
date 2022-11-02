@@ -61,14 +61,4 @@ export class ProductsController {
         }
     }
 
-    public static async sendOrder(req: Request, res: Response) {
-
-        try {
-            res.status(200).json(await ProductsService.sendOrder(req, res))
-        } catch (error) {
-            res.status(400).json({
-                error: error
-            })
-        }
-    }
 }
